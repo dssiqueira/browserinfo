@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "BrowserInfo",
+  "version": "1.0",
+  "description": "Extensão para coletar informações do navegador para evidências de testes",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icones/BrowserInfo48.png"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "icons": {
+    "16": "icones/BrowserInfo16.png",
+    "48": "icones/BrowserInfo48.png"
+  }
+}

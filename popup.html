@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BrowserInfo</title>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>BrowserInfo</h1>
+    
+    <!-- Abas de navegação -->
+    <div class="tabs">
+      <button class="tab-button active" data-tab="basic">Básico</button>
+      <button class="tab-button" data-tab="advanced">Avançado</button>
+    </div>
+    
+    <!-- Conteúdo da aba Básico -->
+    <div id="basic" class="tab-content active">
+      <div class="info-container">
+        <h3>Informações Básicas</h3>
+        <div class="info-section">
+          <div class="info-item">
+            <span class="label">Navegador:</span>
+            <span id="browser-name" class="value"></span>
+          </div>
+          <div class="info-item">
+            <span class="label">Versão:</span>
+            <span id="browser-version" class="value"></span>
+          </div>
+          <div class="info-item">
+            <span class="label">Sistema Operacional:</span>
+            <span id="os" class="value"></span>
+          </div>
+          <div class="info-item">
+            <span class="label">Resolução:</span>
+            <span id="resolution" class="value"></span>
+          </div>
+          <div class="info-item">
+            <span class="label">URL Atual:</span>
+            <span id="current-url" class="value"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Conteúdo da aba Avançado -->
+    <div id="advanced" class="tab-content">
+      <!-- Informações de Rede -->
+      <div class="info-container">
+        <h3>Informações de Rede</h3>
+        <div class="info-section">
+          <div class="info-item">
+            <span class="label">Tipo de Conexão:</span>
+            <span id="connection-type" class="value">Carregando...</span>
+          </div>
+          <div class="info-item">
+            <span class="label">Velocidade Estimada:</span>
+            <span id="connection-speed" class="value">Carregando...</span>
+          </div>
+          <div class="info-item">
+            <span class="label">Status Online:</span>
+            <span id="online-status" class="value">Carregando...</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Informações de Hardware -->
+      <div class="info-container">
+        <h3>Informações de Hardware</h3>
+        <div class="info-section">
+          <div class="info-item">
+            <span class="label">Núcleos de CPU:</span>
+            <span id="cpu-cores" class="value">Carregando...</span>
+          </div>
+          <div class="info-item">
+            <span class="label">Memória Disponível:</span>
+            <span id="memory-info" class="value">Carregando...</span>
+          </div>
+          <div class="info-item">
+            <span class="label">Informações de GPU:</span>
+            <span id="gpu-info" class="value">Carregando...</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Localização -->
+      <div class="info-container">
+        <h3>Localização</h3>
+        <div class="info-section">
+          <div class="info-item">
+            <span class="label">Idioma:</span>
+            <span id="language-info" class="value">Carregando...</span>
+          </div>
+          <div class="info-item">
+            <span class="label">Fuso Horário:</span>
+            <span id="timezone-info" class="value">Carregando...</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Cookies e Armazenamento -->
+      <div class="info-container">
+        <h3>Cookies e Armazenamento</h3>
+        <div class="info-section">
+          <div class="info-item">
+            <span class="label">Cookies Habilitados:</span>
+            <span id="cookies-enabled" class="value">Carregando...</span>
+          </div>
+          <div class="info-item">
+            <span class="label">Cookies de Terceiros:</span>
+            <span id="third-party-cookies" class="value">Carregando...</span>
+          </div>
+          <div class="info-item">
+            <span class="label">LocalStorage Disponível:</span>
+            <span id="local-storage" class="value">Carregando...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="buttons">
+      <button id="copy-button">Copiar Informações</button>
+    </div>
+  </div>
+  <!-- Notificação de sucesso -->
+  <div id="notification" class="notification">Informações copiadas com sucesso!</div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
