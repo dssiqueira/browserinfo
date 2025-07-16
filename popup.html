@@ -13,57 +13,57 @@
     <h1>BrowserInfo</h1>
     
     <!-- Abas de navegação -->
-    <div class="tabs">
-      <button class="tab-button active" data-tab="basic">Básico</button>
-      <button class="tab-button" data-tab="advanced">Avançado</button>
+    <div class="tabs" role="tablist" aria-label="Informações do navegador">
+      <button class="tab-button active" data-tab="basic" role="tab" aria-selected="true" aria-controls="basic" id="tab-basic">Básico</button>
+      <button class="tab-button" data-tab="advanced" role="tab" aria-selected="false" aria-controls="advanced" id="tab-advanced">Avançado</button>
     </div>
     
     <!-- Conteúdo da aba Básico -->
-    <div id="basic" class="tab-content active">
+    <div id="basic" class="tab-content active" role="tabpanel" aria-labelledby="tab-basic">
       <div class="info-container">
         <h3>Informações Básicas</h3>
         <div class="info-section">
           <div class="info-item">
             <span class="label">Navegador:</span>
-            <span id="browser-name" class="value"></span>
+            <span id="browser-name" class="value" aria-label="Nome do navegador">Carregando...</span>
           </div>
           <div class="info-item">
             <span class="label">Versão:</span>
-            <span id="browser-version" class="value"></span>
+            <span id="browser-version" class="value" aria-label="Versão do navegador">Carregando...</span>
           </div>
           <div class="info-item">
             <span class="label">Sistema Operacional:</span>
-            <span id="os" class="value"></span>
+            <span id="os" class="value" aria-label="Sistema operacional">Carregando...</span>
           </div>
           <div class="info-item">
             <span class="label">Resolução:</span>
-            <span id="resolution" class="value"></span>
+            <span id="resolution" class="value" aria-label="Resolução da tela">Carregando...</span>
           </div>
           <div class="info-item">
             <span class="label">URL Atual:</span>
-            <span id="current-url" class="value"></span>
+            <span id="current-url" class="value" aria-label="URL da página atual">Carregando...</span>
           </div>
         </div>
       </div>
     </div>
     
     <!-- Conteúdo da aba Avançado -->
-    <div id="advanced" class="tab-content">
+    <div id="advanced" class="tab-content" role="tabpanel" aria-labelledby="tab-advanced">
       <!-- Informações de Rede -->
       <div class="info-container">
         <h3>Informações de Rede</h3>
         <div class="info-section">
           <div class="info-item">
             <span class="label">Tipo de Conexão:</span>
-            <span id="connection-type" class="value">Carregando...</span>
+            <span id="connection-type" class="value" aria-label="Tipo de conexão de rede">Carregando...</span>
           </div>
           <div class="info-item">
             <span class="label">Velocidade Estimada:</span>
-            <span id="connection-speed" class="value">Carregando...</span>
+            <span id="connection-speed" class="value" aria-label="Velocidade estimada da conexão">Carregando...</span>
           </div>
           <div class="info-item">
             <span class="label">Status Online:</span>
-            <span id="online-status" class="value">Carregando...</span>
+            <span id="online-status" class="value" aria-label="Status da conexão online">Carregando...</span>
           </div>
         </div>
       </div>
@@ -74,15 +74,15 @@
         <div class="info-section">
           <div class="info-item">
             <span class="label">Núcleos de CPU:</span>
-            <span id="cpu-cores" class="value">Carregando...</span>
+            <span id="cpu-cores" class="value" aria-label="Número de núcleos de CPU">Carregando...</span>
           </div>
           <div class="info-item">
             <span class="label">Memória Disponível:</span>
-            <span id="memory-info" class="value">Carregando...</span>
+            <span id="memory-info" class="value" aria-label="Informações de memória">Carregando...</span>
           </div>
           <div class="info-item">
             <span class="label">Informações de GPU:</span>
-            <span id="gpu-info" class="value">Carregando...</span>
+            <span id="gpu-info" class="value" aria-label="Informações da placa de vídeo">Carregando...</span>
           </div>
         </div>
       </div>
@@ -93,11 +93,11 @@
         <div class="info-section">
           <div class="info-item">
             <span class="label">Idioma:</span>
-            <span id="language-info" class="value">Carregando...</span>
+            <span id="language-info" class="value" aria-label="Idioma do navegador">Carregando...</span>
           </div>
           <div class="info-item">
             <span class="label">Fuso Horário:</span>
-            <span id="timezone-info" class="value">Carregando...</span>
+            <span id="timezone-info" class="value" aria-label="Fuso horário do sistema">Carregando...</span>
           </div>
         </div>
       </div>
@@ -108,22 +108,22 @@
         <div class="info-section">
           <div class="info-item">
             <span class="label">Cookies Habilitados:</span>
-            <span id="cookies-enabled" class="value">Carregando...</span>
+            <span id="cookies-enabled" class="value" aria-label="Status dos cookies">Carregando...</span>
           </div>
           <div class="info-item">
             <span class="label">Cookies de Terceiros:</span>
-            <span id="third-party-cookies" class="value">Carregando...</span>
+            <span id="third-party-cookies" class="value" aria-label="Status dos cookies de terceiros">Carregando...</span>
           </div>
           <div class="info-item">
             <span class="label">LocalStorage Disponível:</span>
-            <span id="local-storage" class="value">Carregando...</span>
+            <span id="local-storage" class="value" aria-label="Disponibilidade do LocalStorage">Carregando...</span>
           </div>
         </div>
       </div>
     </div>
     
     <div class="buttons">
-      <button id="copy-button">Copiar Informações</button>
+      <button id="copy-button" aria-label="Copiar informações do navegador para a área de transferência">Copiar Informações</button>
     </div>
   </div>
   <!-- Notificação de sucesso -->

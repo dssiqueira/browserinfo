@@ -2,16 +2,17 @@
 
 <div align="center">
   <img src="icones/BrowserInfo48.png" alt="BrowserInfo Logo" width="120"/>
-  <h3>Extensão para coleta de informações do navegador</h3>
-  <p>Uma ferramenta essencial para QAs e desenvolvedores capturarem dados precisos do navegador para evidências de testes.</p>
+  <h3>Extensão Premium para Coleta de Informações do Navegador</h3>
+  <p>Uma ferramenta profissional e moderna para QAs e desenvolvedores capturarem dados precisos do navegador para evidências de testes e documentação técnica.</p>
 </div>
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Chrome-v88+-blue.svg" alt="Chrome v88+"/>
-  <img src="https://img.shields.io/badge/Edge-v88+-blue.svg" alt="Edge v88+"/>
-  <img src="https://img.shields.io/badge/Firefox-v86+-orange.svg" alt="Firefox v86+"/>
-  <img src="https://img.shields.io/badge/Opera-v74+-red.svg" alt="Opera v74+"/>
-  <img src="https://img.shields.io/badge/versão-1.0-green.svg" alt="Versão 1.0"/>
+  <img src="https://img.shields.io/badge/Chrome-v88+-4285f4.svg" alt="Chrome v88+"/>
+  <img src="https://img.shields.io/badge/Edge-v88+-0078d4.svg" alt="Edge v88+"/>
+  <img src="https://img.shields.io/badge/Opera-v74+-ff1b2d.svg" alt="Opera v74+"/>
+  <img src="https://img.shields.io/badge/versão-1.0-success.svg" alt="Versão 1.0"/>
+  <img src="https://img.shields.io/badge/acessibilidade-WCAG_AAA-green.svg" alt="WCAG AAA"/>
+  <img src="https://img.shields.io/badge/design-premium-purple.svg" alt="Design Premium"/>
 </div>
 
 ## 📋 Índice
@@ -30,16 +31,35 @@
 
 ## 🔍 Visão Geral
 
-BrowserInfo é uma extensão para navegadores baseados em Chromium que coleta e exibe informações detalhadas sobre o ambiente de navegação. Projetada especialmente para profissionais de QA e desenvolvedores, a extensão facilita a captura de dados precisos do navegador para documentação de testes, relatórios de bugs e análise de compatibilidade.
+BrowserInfo é uma extensão premium para navegadores baseados em Chromium que coleta e exibe informações detalhadas sobre o ambiente de navegação com design moderno e elegante. Desenvolvida com foco em profissionais de QA e desenvolvedores, a extensão oferece uma experiência visual sofisticada com glass morphism, gradientes elegantes e funcionalidades avançadas para captura precisa de dados do navegador.
 
-## ✨ Recursos
+## ✨ Recursos Premium
 
-- **Interface Moderna e Intuitiva**: Design com cards, animações suaves e organização visual aprimorada
-- **Sistema de Abas**: Navegação fácil entre informações básicas e avançadas
-- **Notificações Elegantes**: Feedback visual com animações de entrada/saída e desaparecimento automático
-- **Cópia em Formato Markdown**: Exportação das informações em formato Markdown para fácil integração com ferramentas de documentação
-- **Detecção Precisa de Navegadores**: Identificação correta de navegadores modernos, incluindo o Microsoft Edge baseado em Chromium
-- **Informações Detalhadas de Versão**: Exibição da versão completa do navegador (ex: 137.0.3296.83)
+### 🎨 **Design Moderno**
+- **Glass Morphism**: Efeitos de transparência e blur sofisticados
+- **Gradientes Elegantes**: Esquema de cores roxo-azul/verde-azul harmonioso
+- **Toggle Switch Animado**: Alternância suave entre temas claro/escuro com persistência
+- **Cards Flutuantes**: Efeitos de elevação e sombras dinâmicas
+- **Transições Suaves**: Animações cubic-bezier para experiência premium
+
+### 🔧 **Funcionalidades Avançadas**
+- **Detecção Precisa**: Windows 11, navegadores modernos e versões completas
+- **Sistema de Cache**: Performance otimizada com armazenamento inteligente
+- **Sanitização de URLs**: Proteção automática de dados sensíveis
+- **Tratamento de Erros**: Fallbacks robustos e notificações informativas
+- **Arquitetura OOP**: Código limpo e modular para manutenibilidade
+
+### ♿ **Acessibilidade Total**
+- **WCAG AAA**: Contraste otimizado em ambos os temas
+- **Navegação por Teclado**: Suporte completo para Tab, Enter e Espaço
+- **Labels ARIA**: Descrições detalhadas para leitores de tela
+- **Focus States**: Indicadores visuais claros para navegação
+
+### 📊 **Informações Detalhadas**
+- **Básicas**: Navegador, versão, SO, resolução, URL atual
+- **Avançadas**: Rede, hardware, localização, cookies, plugins
+- **Exportação**: Formato Markdown para documentação técnica
+- **Tempo Real**: Informações sempre atualizadas e precisas
 
 ## 📊 Informações Coletadas
 
@@ -84,15 +104,23 @@ BrowserInfo é uma extensão para navegadores baseados em Chromium que coleta e 
 
 ```
 browserinfo/
-├── icones/                # Ícones da extensão
-│   ├── BrowserInfo16.png  # Ícone 16x16
-│   └── BrowserInfo48.png  # Ícone 48x48
-├── manifest.json          # Configuração da extensão
-├── popup.html             # Interface do usuário
-├── popup.js               # Lógica principal
-├── popup_new.js           # Versão alternativa da lógica (desenvolvimento)
-├── styles.css             # Estilos da interface
-└── README.md              # Documentação
+├── docs/                     # Documentação técnica detalhada
+│   ├── Arquitetura.md        # Arquitetura do sistema
+│   ├── Contexto.md           # Contexto e visão geral
+│   ├── DeteccaoNavegador.md  # Detecção de navegadores
+│   ├── ExportacaoDados.md    # Sistema de exportação
+│   ├── Funcionalidades.md    # Funcionalidades detalhadas
+│   ├── InformacoesAvancadas.md # Informações avançadas
+│   ├── Interface.md          # Design da interface
+│   └── Notificacoes.md       # Sistema de notificações
+├── icones/                   # Ícones da extensão
+│   ├── BrowserInfo16.png     # Ícone 16x16
+│   └── BrowserInfo48.png     # Ícone 48x48
+├── manifest.json             # Configuração da extensão
+├── popup.html                # Interface premium com acessibilidade
+├── popup.js                  # Lógica OOP com funcionalidades avançadas
+├── styles.css                # Design moderno com glass morphism
+└── README.md                 # Documentação completa
 ```
 
 ## 🛠️ Tecnologias
@@ -105,12 +133,27 @@ browserinfo/
 
 ## 🚀 Roadmap
 
-- [ ] Suporte para temas claro/escuro
-- [ ] Exportação em formatos adicionais (JSON, HTML)
+### ✅ **Implementado**
+- [x] Suporte para temas claro/escuro
+- [x] Acessibilidade completa (ARIA, navegação por teclado)
+- [x] Tratamento robusto de erros
+- [x] Sistema de cache para performance
+- [x] Detecção aprimorada de SO (Windows 11, versões específicas)
+- [x] Sanitização de URLs para proteção da privacidade
+- [x] Arquitetura orientada a objetos
+
+### 🔄 **Em Desenvolvimento**
+- [ ] Exportação em formatos adicionais (JSON, CSV)
 - [ ] Captura de screenshot da página atual
-- [ ] Histórico de informações coletadas
+- [ ] Histórico de informações coletadas com comparação
+- [ ] Configurações personalizáveis do usuário
+
+### 📋 **Planejado**
 - [ ] Suporte para Firefox via WebExtensions API
 - [ ] Publicação na Chrome Web Store e Firefox Add-ons
+- [ ] Testes automatizados
+- [ ] Internacionalização (i18n)
+- [ ] Service Worker para funcionalidades offline
 
 ## 👥 Contribuição
 
